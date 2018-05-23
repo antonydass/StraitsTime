@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Straits Times Test Automation" verbose="3"  parallel="tests" thread-count="250" >
+	<parameter name="deviceHost" value="" />
+	<parameter name="devicePort" value="" />
+	<parameter name="browserName" value="" /> 
+	<test name="Straits Times" thread-count="10" parallel="false">
+	<classes>
+		<class name="com.straitstimes_app_testscripts.mainArticle.Verify_Main_Article">
+		</class>
+	</classes>
+</test>
+</suite>
